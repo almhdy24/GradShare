@@ -180,7 +180,26 @@ class HomeController extends Controller
 
   public function viewProject(?int $id)
   {
+    // Validate project ID
+    if ($id === null || $id <= 0) {
+      $this->view("templates/header", [
+        "title" => "GradShare - Invalid Project ID",
+      ]);
+      $this->view("home/error", ["message" => "Invalid id"]);
+      $this->view("templates/footer");
+      return;
+    }
+
+    // Attempt to read the project from the database
     $project = $this->db->read("projects", $id);
+
+    // Check if the project exists
+    if ($project === null) {
+      $this->view("errors/404");
+      return;
+    }
+
+    // Render the project details
     $this->view("templates/header", ["title" => "GradShare - Project Details"]);
     $this->view("home/view", ["project" => $project]);
     $this->view("templates/footer");
@@ -347,7 +366,7 @@ class HomeController extends Controller
   }
   public function about()
   {
-    $this->view("templates/header",["title"=>"GradShare - About"]);
+    $this->view("templates/header", ["title" => "GradShare - About"]);
     $this->view("home/about");
     $this->view("templates/footer");
   }

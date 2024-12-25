@@ -1,72 +1,67 @@
-# Simy Framework
+# GradShare
 
-**Lightweight PHP Framework for Modern Web Development**
+## Description
 
-Welcome to Simy Framework! Simy is a powerful and lightweight PHP framework designed to facilitate modern web development using the Model-View-Controller (MVC) architecture. With Simy, you can build robust, scalable web applications quickly and efficiently.
+GradShare is an intuitive web application designed specifically for graduating students to easily share their projects with peers and mentors. This platform provides a user-friendly interface built on the Simy framework, allowing users to upload files seamlessly and securely. With collaboration and feedback tools, GradShare helps showcase innovative ideas and elevates your graduation experience.
 
-## Table of Contents
+## Technologies Used
 
-- [Features](#features)
-- [Installation](#installation)
-- [Getting Started](#getting-started)
-- [Documentation](#documentation)
-- [License](#license)
-
-## Features
-
-- **MVC Architecture**: Clear separation of concerns for improved organization and manageability of code.
-- **Routing System**: Simple and elegant routing to connect URLs to the corresponding controllers and actions.
-- **Database Abstraction**: Unified interface to interact with various database systems seamlessly.
-- **Template Engine**: Lightweight templating system for rendering views, promoting separation of business logic and presentation.
+- **Simy Framework**: A lightweight and powerful framework for building dynamic web applications.
+- **JsonShelter**: A robust library for handling JSON data and ensuring smooth data interchange.
+- **AsyncFileUploader**: An efficient file upload library that supports asynchronous uploading, enhancing user experience.
 
 ## Installation
 
-To install Simy Framework, follow these steps:
+To get started with GradShare, follow these steps:
 
-1. **Create a New Project**:
+1. **Clone the Repository:**
    ```bash
-   composer create-project almhdy/simy-framework app-name
+   git clone https://github.com/yourusername/GradShare.git
    ```
 
-2. **Navigate to the Project Directory**:
+2. **Navigate to the Project Directory:**
    ```bash
-   cd app-name
+   cd GradShare
    ```
 
-3. **Install Dependencies**:
-   Use Composer to install the required dependencies:
+3. **Install Composer Dependencies:**
+   Make sure you have Composer installed, then run:
    ```bash
    composer install
    ```
 
-4. **Configure Your Application**:
-   Modify the configuration settings located in the `app/.env` file to set up your environment (database details, app settings, etc.).
-## Getting Started
+4. **Configuration:**
+   - Update the configuration files as necessary to set up your database and other application settings.
 
-To create your first application with Simy Framework:
-
-1. **Create a New Controller**:
-   Create a new PHP file in the `app/controllers/` directory.
-
-2. **Define Routes**:
-   Open the `routes/Routes.php` file and define your application routes.
-
-3. **Build Your Views**:
-   Create views within the `app/views/` directory using the templating system provided.
-
- **Run Your Application**:
-   Start a local PHP server:
+5. **Run the Application:**
+   Start your local server:
    ```bash
-   php simy serve
+   php -S localhost:8000
    ```
-   Visit `http://localhost:8000` in your browser to see your application in action.
-   
-## Documentation
 
-For detailed documentation, examples, and guides, visit our official documentation site:
+6. **Access the Application:**
+   Open your web browser and go to `http://localhost:8000` to start using GradShare.
 
-[Simy Framework Documentation](https://www.simy-framework.com/docs)
+## Usage
+
+1. **User Registration/Login:**
+   Create an account or log in to share your projects.
+
+2. **Upload Projects:**
+   Use the intuitive interface to select and upload compressed files or entire project folders.
+
+3. **Collaborate:**
+   Share your projects with peers and mentors for feedback and collaboration.
+
+4. **Explore:**
+   Browse through projects shared by other graduating students to gain insights and inspiration.
+
+## Contribution
+
+Contributions are welcome! If you would like to contribute, please fork the repository and submit a pull request.
 
 ## License
 
-Simy Framework is open source and available under the LGPL-3.0-or-later License. See the [LICENSE](LICENSE) file for more information.
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+Join the GradShare community and elevate your graduation journey today!
