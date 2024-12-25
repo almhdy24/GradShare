@@ -16,7 +16,7 @@ To get started with GradShare, follow these steps:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/GradShare.git
+   git clone https://github.com/almhdy24/GradShare.git
    ```
 
 2. **Navigate to the Project Directory:**
